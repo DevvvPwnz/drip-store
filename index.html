@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.5.0/swiper-bundle.css" />
+    <link rel="stylesheet" href="//unpkg.com/swiper@6.5.0/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://unpkg.com/swiper@6.5.0/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper@6.5.0/swiper-bundle.min.js"></script>
+    <title>Drip Store</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ===loader=== -->
+        <div class="loader">
+           <img class="loader__img" src="./img/mens/off_white_court/1.webp" alt="">
+           <div class="loader__text">DRIP STORE</div>
+           
+           <img class="loader__img-hands loader__img-one" src="./img/hand.png" alt="">
+           <img class="loader__img-hands loader__img-two" src="./img/hand2.png" alt="">
+        </div>
+        <!-- ===first-screen=== -->
+        <header class="header lock__padding">
+            <div class="header__body container">
+                <a href="#" class="header__logo"><img src="./img/drip-logo.png" alt=""></a>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#" class="header__link">Главная</a></li>
+                        <li class="header__list-item"><a href="#new" class="header__link">Новинки</a></li>
+                        <li class="header__list-item"><a href="mens.html" class="header__link">Мужская</a></li>
+                        <li class="header__list-item"><a href="womens.html" class="header__link">Женская</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <a class="popup__link" href="#popup"> <i class='bx bxs-shopping-bag-alt header__cart-icon'></i><span
+                            class="header__cart-count"></span></a>
+                </div>
+                <div class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <section class="promo" id="promo">
+            <div class="container">
+                <div class="promo__items">
+                    <div class="promo__gallery">
+                        <img class="promo__img" src="img/2.webp" alt="">
+                    </div>
+                    <div class="promo__content">
+                        <div class="promo__title">NEW DROP</div>
+                        <div class="promo__suptitle">Off-White Off-Court</div>
+                        <a class="promo__btn main__btn collection__item" data-atr="Off-white Off-Court">Купить</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ===new section === -->
+        <section class="new" id="new">
+            <div class="new__title title__border">
+                Новинки
+            </div>
+            <div class="container">
+                <div class="new__items">
+                </div>
+            </div>
+        </section>
+        <!-- ===mens collection=== -->
+        <section class="collection">
+            <div class="collection__header">
+                <div class="collection__title">
+                    Мужская обувь
+                </div>
+            </div>
+            <div class="container">
+                <div class="collection__items mens__products-main">
+
+                </div>
+                <a href="mens.html" class="collection__btn main__btn">Смотреть все</a>
+            </div>
+        </section>
+        <!-- ===female collection=== -->
+        <section class="collection">
+            <div class="collection__header">
+                <div class="collection__title">
+                    Женская обувь
+                </div>
+            </div>
+            <div class="container">
+                <div class="collection__items womens__products-main">
+
+                </div>
+                <a href="womens.html" class="collection__btn main__btn">Смотреть все</a>
+            </div>
+        </section>
+        <!-- === about === -->
+        <section class="about">
+            <div class="title__border">
+                DripStore это:
+            </div>
+            <div class="container">
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__item-icon">
+                            <i class='bx bxs-badge-dollar'></i>
+                        </div>
+                        <div class="about__item-text">
+                            Мгновенный возврат средств
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-icon">
+                            <i class='bx bxs-rocket'></i>
+                        </div>
+                        <div class="about__item-text">
+                            Быстрая Доставка в по всему миру
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-icon">
+                            <i class='bx bxs-rocket'></i>
+                        </div>
+                        <div class="about__item-text">
+                            Быстрая Доставка в по всему миру
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item-icon">
+                            <i class='bx bxs-medal'></i>
+                        </div>
+                        <div class="about__item-text">
+                            Только оригинальный товар
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- === footer === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items">
+                    <div class="footer__payment">
+                        <div class="footer__title">Способ оплаты</div>
+                        <div class="footer__payment-icons">
+                            <i class='bx bxl-visa'></i>
+                            <i class='bx bxl-mastercard'></i>
+                        </div>
+                    </div>
+                    <div class="footer__about">
+                        <div class="footer__title">Информация</div>
+                        <a href="#popup__pay" class="footer__info popup__link">Доставка и оплата</a>
+                        <a href="#popup__rule" class="footer__info popup__link">Условия пользования</a>
+                    </div>
+                </div>
+                <div class="footer__brand">
+                    <span>DripStore</span> 2021 All Rights Reserved
+                </div>
+            </div>
+        </footer>
+        <!-- ====modal cart==== -->
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="close-popup"><i class='bx bxs-x-circle'></i></div>
+                    <div class="popup__title">Корзина <i class='bx bxs-shopping-bags'></i></div>
+                    <div class="popup__cart">
+                        <div class="popup__cart-empty">Вы не выбрали товар!</div>
+                    </div>
+                    <div class="popup__total">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===modal product=== -->
+    <div id="popup__product" class="popup">
+        <div class="popup__body">
+            <div class="popup__content popup__page">
+                <div class="close-popup"><i class='bx bxs-x-circle'></i></div>
+                <div class="popup__cart-wrapper">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===size table=== -->
+    <div id="popup__size" class="popup">
+        <div class="popup__body">
+            <div class="popup__content popup__page">
+                <div class="close-popup"><i class='bx bxs-x-circle'></i></div>
+                <div class="table__size">
+                    <div class="table__title">Мужская</div>
+
+                    <table>
+                        <tr>
+                            <th>Размер</th>
+                            <th>Длина стельки(мм)</th>
+                        </tr>
+                        <tr>
+                            <td>39.5</td>
+                            <td>263</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>265</td>
+                        </tr>
+                        <tr>
+                            <td>40.5</td>
+                            <td>267</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>270</td>
+                        </tr>
+                        <tr>
+                            <td>41.5</td>
+                            <td>275</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>280</td>
+                        </tr>
+                        <tr>
+                            <td>42.5</td>
+                            <td>282</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>285</td>
+                        </tr>
+                        <tr>
+                            <td>43.5</td>
+                            <td>287</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>290</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="table__title">Женская</div>
+
+                    <table>
+                        <tr>
+                            <th>Размер</th>
+                            <th>Длина стельки(мм)</th>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>227</td>
+                        </tr>
+                        <tr>
+                            <td>35.5</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>233</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>240 </td>
+                        </tr>
+                        <tr>
+                            <td>37.5</td>
+                            <td>245</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>250 </td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>260</td>
+                        </tr>
+                        <tr>
+                            <td>39.5</td>
+                            <td>263 </td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>265</td>
+                        </tr>
+                        <tr>
+                            <td>40.5</td>
+                            <td>267</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>270</td>
+                        </tr>
+                        <tr>
+                            <td>41.5</td>
+                            <td>273</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>277</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===modal rule=== -->
+    <div id="popup__rule" class="popup">
+        <div class="popup__body">
+            <div class="popup__content popup__page">
+                <div class="close-popup"><i class='bx bxs-x-circle'></i></div>
+                <div class="popup__rule">
+                    <div class="rule__title">Условия пользования</div>
+                    <div class="rule__text">
+                        Пожалуйста, внимательно ознакомьтесь с Условиями до начала получения Услуг. Обратите внимание,
+                        что при оказании вам Услуг вы соглашаетесь соблюдать Условия. Если вы отказываетесь выполнять
+                        Условия, то вы не сможете воспользоваться предлагаемыми Услугами и должны покинуть Сайт
+                        немедленно. Использование Сайта для заказа товаров будет рассматриваться как согласие и принятие
+                        Условий.
+                    </div>
+                    <div class="rule__suptitle">
+                        Услуги сайта
+                    </div>
+                    <div class="rule__text">
+                        Чтобы воспользоваться Услугами, вы должны быть старше 18 лет.
+
+                        Оформляя заказ на Сайте, вы соглашаетесь на получение (i) электронных писем/push-уведомлений,
+                        которые мы можем направлять вам для уведомления о статусе заказа: после оформления заказа; в
+                        случае его изменения; перед датой доставки товара; в случае отмены заказа Партнером; в ином
+                        случае, влияющем на исполнение заказа или своевременное информирование о его статусе, (ii)
+                        сообщений (SMS) на телефонный номер, указанный вами, а также (iii) звонков с предложением
+                        оценить качество нашей работы на указанный вами телефонный номер. При этом такие сообщения и/или
+                        звонки могут исходить как от нас, так и от третьих лиц, которых мы можем время от времени
+                        привлекать для исполнения своих обязательств по настоящим Условиям.
+                    </div>
+                    <div class="rule__suptitle">
+                        Интеллектуальная собственность, программное обеспечение и содержимое Сайта
+                    </div>
+                    <div class="rule__text">
+                        Мы являемся правообладателями или лицензиарами прав интеллектуальной собственности на Сайт и его
+                        содержимое (такого как текст, графика, логотипы, иконки кнопок, изображения, звуковые клипы,
+                        цифровые загрузки, сборники данных и программное обеспечение, включая воспроизведение и
+                        компиляцию такового) («Содержимое»). Права на Сайт и Содержимое защищены международными законами
+                        об авторских правах, а также любыми соответствующими местными законами, касающимися защиты
+                        авторских прав и прав на базы данных. Все права защищены.
+
+                        Вы не имеете права систематически извлекать и/или использовать части Сайта или Содержимого. В
+                        частности, вы не можете использовать анализ данных, автоматические средства или схожие
+                        инструменты для сбора или извлечения данных (единожды или многократно) для дальнейшего
+                        использования любых существенных частей Сайта. Вы не имеете права создавать и/или публиковать
+                        базы данных, которые бы включали существенные части Сайта (например, наши цены или списки
+                        товаров) без нашего письменного согласия.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===modal product=== -->
+    <div id="popup__pay" class="popup">
+        <div class="popup__body">
+            <div class="popup__content popup__page">
+                <div class="close-popup"><i class='bx bxs-x-circle'></i></div>
+                <div class="popup__rule">
+                    <div class="rule__title">Доставка и оплата</div>
+                    <div class="rule__suptitle">
+                        СРОКИ И УСЛОВИЯ ДОСТАВКИ
+                    </div>
+                    <div class="rule__text">
+                        Доставка осуществляется с понедельника по пятницу, с 9:00 до 18:00. Клиентам из России, Украины,
+                        Беларуси, Казахстана, Азербайджана, Грузии, Армении и Киргизии мы предлагаем только
+                        экспресс-доставку курьерской службой DHL. У покупателей из этих стран есть возможность получить
+                        заказ в офисе DHL или перенести дату доставки. В других странах заказ может быть доставлен
+                        другими курьерскими службами, включая UPS, FedEx, TNT и DPD.
+
+                        Стоимость доставки зависит от ее типа, а также от страны отправления и адреса доставки. Для
+                        клиентов из России, Украины и Казахстана доставка будет бесплатной, если сумма заказа составит
+                        не менее 18 000 рублей, 300 евро или 350 долларов США соответственно. Если общая сумма окажется
+                        меньше этого лимита, итоговая стоимость доставки будет зависеть от количества посылок из разных
+                        бутиков в одном заказе.
+
+                        Клиенты из большинства других стран и регионов могут оформить доставку по единому минимальному
+                        тарифу. Это означает, что даже при заказе нескольких товаров из разных бутиков заплатить за
+                        доставку нужно будет только один раз. Стоимость доставки в этом случае будет соответствовать
+                        минимальному тарифу для самого удаленного от пункта назначения бутика FARFETCH.
+
+                        Доступные варианты доставки и ее итоговая стоимость отобразятся при оформлении заказа.
+
+                        Экспресс-доставка (включая DHL Express): доступна во всех странах и регионах. В большей части
+                        Европы и США доставка занимает 2-4 рабочих дня. Остальная часть мира, включая Россию – 3-7
+                        рабочих дней*.
+
+                        Стандартная доставка: доступна только в некоторых странах. Занимает 2-6 дней*.
+                    </div>
+                    <div class="rule__suptitle">
+                        Оплата
+                    </div>
+                    Способ оплаты завити от вашей страны ,общедоступные способы: картой VISA/MASTER CARD 
+                    
+                    При возврате товара мы всегда возмещаем точную стоимость заказа в той же валюте, в которой заказ был
+                    показан вам на нашем сайте. При оплате картой в валюте, отличной от валюты заказа, возможно взимание
+                    комиссии платежных систем и/или эмитента карты как при оплате товара, так и при возврате средств.
+                    Также некоторые банки взимают с клиента комиссии платежных систем при оплате или возврате средств
+                    даже при транзакциях в одной и той же валюте. В результате сумма возврата на вашу карту может быть
+                    меньше суммы первоначального платежа
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===scroll-top=== -->
+    <a href="#promo" class="scroll__top">
+        <i class='bx bxs-up-arrow-square'></i>
+    </a>
+    </div>
+    <script src="js/app.js"> </script>
+</body>
+
+</html>
